@@ -1,0 +1,13 @@
+{
+    "name": "teambravo/profile",
+    "description": "this describes the information of a user as a profile",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "TeamBravo\\Profile\\":"src/"
+        }
+    }
+}
