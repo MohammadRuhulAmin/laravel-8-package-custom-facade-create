@@ -10,6 +10,8 @@ class ProfileServiceProvider extends ServiceProvider{
         $this->loadViewsFrom(__DIR__.'/views',"Profile");
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
+        $this->publishes([__DIR__.'/assets'=>public_path('profile')],'assets');
+
 
 
        

@@ -6,10 +6,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/test',function(){
 
-   return  \FriendInfo_List::FriendInfo()."code!";
+  // return  \FriendInfo_List::FriendInfo()."code!";
    
 
-    return view('Profile::welcome');
+    return view('Profile::Master.userTemplate');
 
 });
 
