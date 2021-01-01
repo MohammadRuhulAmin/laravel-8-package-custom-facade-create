@@ -1,6 +1,6 @@
 <?php 
 namespace TeamBravo\Profile;
-
+use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 
 class ProfileServiceProvider extends ServiceProvider{
@@ -11,6 +11,10 @@ class ProfileServiceProvider extends ServiceProvider{
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
         $this->publishes([__DIR__.'/assets'=>public_path('profile')],'assets');
+
+        $router = $this->app->make(Router::class);
+
+        //$router->aliasMiddleware('UserActionMiddleware', ::class);
 
 
 
