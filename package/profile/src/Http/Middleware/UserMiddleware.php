@@ -21,7 +21,6 @@ class UserMiddleware
         if($x != 1){
             abort(403,"Unauthorized!");
         }
-
         return $next($request);
     }
 }

@@ -11,6 +11,10 @@ class ProfileController extends Controller{
 
     public function __construct()
     {
+
+        // Niddleware_x is just created by command
+        //registered inside the karnel
+        //and invoking inside constructor
         $this->middleware('Middleware_x');
     }
     public function index(){
